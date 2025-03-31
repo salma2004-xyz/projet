@@ -1,0 +1,61 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Container for the sections */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Section box styles */
+.box {
+    position: relative;
+    background: #ccc;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: left;
+    width: 30%; /* Default for desktop */
+    box-sizing: border-box;
+}
+
+/* Title styling */
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff9999;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.chicken { background: #ff9999; }
+.beef { background: #cc4444; }
+.sushi { background: #ffcc66; }
+
+/* Responsive Design */
+@media (max-width: 991px) {  /* Tablet View */
+    .box {
+        width: 45%;
+    }
+    .box:last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {  /* Mobile View */
+    .box {
+        width: 100%;
+    }
+}
